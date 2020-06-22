@@ -1,0 +1,18 @@
+Options +FollowSymLinks -MultiViews
+
+RewriteEngine On
+
+
+RewriteRule ^anasayfa$ index.php [L]
+RewriteRule ^anasayfa$ index.html [L]
+RewriteRule ^projeler$ projeler.php [L]
+RewriteRule ^galeri$ galeri.php [L]
+RewriteRule ^iletisim$ iletisim.php [L]
+RewriteRule ^hakkimizda$ hakkimizda.php [L]
+RewriteRule ^hizmetler$ hizmetler.php [L]
+RewriteRule ^urun/(.*)$ urun.php?urun=$1 [L]
+RewriteRule ^sayfa/(.*)$ sayfa.php?sayfa=$1 [L]
+RewriteRule ^urunler/(.*)$ urunler.php?urunler=$1 [L]
+RewriteRule ^hizmet/(.*)$ hizmet.php?hizmet=$1 [L]
+RewriteRule ^proje/(.*)$ proje.php?proje=$1 [L]
+RewriteRule ^katalog(.*)$ katalog.php?katalog=$1 [L]
